@@ -41,3 +41,20 @@ Nu nog even met onze aangepaste __cfduid een account proberen te maken (niet via
 
 Werkt niet :(
 
+
+Ok, mss dat we login cookies kunnen spoofen (kans: 0.1%)
+En als we dat toch gaan doen, nemen we meteen de nr 1 van de leaderboards: id=987181
+
+1. Eerst ff inloggen
+
+// Before:
+PHPSESSID	35183d7acb94cc03ec18bbb53e54b158
+__cfduid	d512e41c37a82aaa6f1405bb5cfefc45f1468692934
+eccheck	0 // HUH? de check is weer 0 maar ik ben wel ingelogd. De server handlet dus het meest
+tguserid	1989649
+
+// After:
+tguserid	1989649 -> 987181
+
+// Resultaat:
+tguserid blijft 987181, maar de username blijft jasifasfuioashfi...

@@ -14,4 +14,5 @@ Tremor Games crack :P
 
 # Languages
 * C#/.NET
+* Perl
 * Python? (Pls)

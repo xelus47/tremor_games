@@ -15,6 +15,7 @@ When you log in, a certain PHPSESSID is assigned to the user's ID. When the user
 * Password/Hash pairs generator
 * SessionID generator
 * IP spoofing for dummy accounts
+* Chain dummy accounts (refferal codes)
 
 # Languages
 * C#/.NET

@@ -9,7 +9,7 @@ Tremor Games crack :P
 * Convert to bitcoins
 
 # Approach
-When you log in, a certain PHPSESSID is assigned to the user's ID. When the user doesn't click the log out image, the assignment stays and you can visit the account with that PHPSESSID cookie again. (See cookies.md for approach)
+When you log in, a certain PHPSESSID is assigned to the user's ID. When the user doesn't click the log out image, the assignment remains and you can visit the account with that PHPSESSID cookie again. (See cookies.md for approach)
 
 # Todo
 * Automated account generation

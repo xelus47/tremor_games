@@ -1,0 +1,43 @@
+// Before:
+PHPSESSID	a275c7a602f57622419ddacfd9dbaf62
+__cfduid	d512e41c37a82aaa6f1405bb5cfefc45f1468692933
+
+//////////
+
+// After:
+PHPSESSID	a275c7a602f57622419ddacfd9dbaf62
+__cfduid	d512e41c37a82aaa6f1405bb5cfefc45f1468692933
+eccheck		1
+tguserid	1989649
+
+
+
+
+Op moment dat phpsessid wordt verwijderd, springt eccheck naar 0
+
+
+
+Voordat we een volgende request maken, gaan we eerst ff  de __cfduid aanpassen :P
+d512e41c37a82aaa6f1405bb5cfefc45f1468692933 -> d512e41c37a82aaa6f1405bb5cfefc45f1468692934 (+1)
+
+// Before login:
+PHPSESSID	35183d7acb94cc03ec18bbb53e54b158
+__cfduid	d512e41c37a82aaa6f1405bb5cfefc45f1468692934
+
+// After login:
+PHPSESSID	35183d7acb94cc03ec18bbb53e54b158
+__cfduid	d512e41c37a82aaa6f1405bb5cfefc45f1468692934
+eccheck		1
+tguserid	1989649
+
+
+Conclusie: je kan inloggen met wat voor __cfduid dan ook
+
+
+
+Nu nog even met onze aangepaste __cfduid een account proberen te maken (niet via tor, dus ip blijft hetzelfde)
+
+> Only 1 account is allowed per IP and PC
+
+Werkt niet :(
+

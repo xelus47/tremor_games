@@ -13,5 +13,5 @@ Tremor Games crack :P
 * Automated requests
 
 # Languages
-* C#
+* C#/.NET
 * Python? (Pls)

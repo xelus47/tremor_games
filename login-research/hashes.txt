@@ -1,0 +1,26 @@
+PHPSESSID, aka md5 or sha1 (depending on settings), aka hash code
+
+
+php specification for PHPSESS generation here:
+https://github.com/php/php-src/blob/d9bfe06194ae8f760cb43a3e7120d0503f327398/ext/session/session.c#L284
+
+
+The code is either 16 or 20 chars long
+
+Before brute forcing, check if maybe it's some kind of string to hex, i.e.:
+	> "hallo" --> 68 61 6c 6c 6f
+Another way to reduce hash brute forcing is knowing the character range (after converting to lower())
+
+
+
+QUESTION!!!
+For how long are SESSIDs authorized and are they case-sensitive (or always upper/lower)?
+
+
+
+hash codes are either 16 or 20 chars long
+
+16 chars: 16^16 /(1*3600*24) = 2.1*10^14
+20 chars: 20^16 /(1*3600*24) = 7.5*10^14
+
+  [Options]^[range] per seconds every day = something with 14 zeros number of days, checking 1 code every second
